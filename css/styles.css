@@ -334,6 +334,23 @@ input {
 }
 
 .project-link {
-  text-align: right;
   margin: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+
+.project-link:hover span:last-of-type {
+  translate: 2px 0;
+}
+
+.project-link span:last-of-type {
+  font-size: 2rem;
+  color: var(--clr-primary);
+}
+.project-link span:last-of-type:hover {
+  font-size: 2rem;
+  color: var(--clr-primary);
+  transition: translate 300ms ease;
 }
